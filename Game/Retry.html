@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retry...</title>
+</head>
+<body>
+<audio id="Lose">
+    <source src="Defeat.m4a">
+</audio>
+<div>
+
+<button onclick="window.location.replace('Card Shuffle Copy.html'); lose.play()" class = "text-center"></button>
+</div>
+</body>
+<style>
+    .text-center {
+        background-image: url("DrawCards.png");
+        width: 200px;
+        height: 60px;
+        position: absolute;
+        left: 45%;
+        bottom: 50%;
+        width: 200px;
+        height: 60px;
+        border: none;
+    }
+</style>
+<SCRIPT>
+    document.body.style.backgroundImage = "url('BackgroundGameOver.png')";
+    var lose = document.getElementById("Lose")
+    lose.volume= 0.3
+    lose.load()
+</SCRIPT>
+</html>
