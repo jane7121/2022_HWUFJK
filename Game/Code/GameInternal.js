@@ -1,5 +1,4 @@
-//MANUAL TO THE CONSOLE
-    console.log('Hello, Welcome to the mod console. (Ctrl+L to clear the console.)')
+
 
     //MUSIC VARIBLES
     var lose = document.getElementById("Lose")
@@ -1158,20 +1157,3 @@
 
 
 
-    function Debug_Me_Clean_MOD(x) {
-    console.log('Do not exit while processing...')
-    console.log('Scanning...')
-    while(0 > x){
-    x=x+1
-}
-    console.log()
-    console.log("The card(s) the monster(s) played last turn are: " + document.getElementById('Message').style.backgroundImage + " and " + document.getElementById('Message2').style.backgroundImage)
-    console.log("card1="+card1+" card2="+card2+" card3="+card3+" card4="+card4+" card5="+card5+" playerHealth="+playerHealth+" playerShield="+playerShield+" enemyShield="+enemyShield+" enemyMaxHp="+enemyMaxHp+" enemyHp="+enemyHp)
-    console.log('Done!')
-}
-
-    function Instant_Teleport_MOD(f){
-    floor=f
-    Update()
-    console.log('You are now on floor '+floor);
-}
