@@ -120,7 +120,7 @@
     font-weight: bolder;
     line-height: 60px;
     text-align: center;
-    background-image: url("/Code/Shield.png");
+    background-image: url("Shield.png");
     width: 69px;
     height: 69px;
     position: absolute;
@@ -133,7 +133,7 @@
     font-weight: bolder;
     line-height: 60px;
     text-align: center;
-    background-image: url("/Code/Shield.png");
+    background-image: url("Shield.png");
     width: 69px;
     height: 69px;
     position: absolute;
@@ -167,7 +167,7 @@
     line-height: 150px;
     font-size: xx-large;
     font-weight: bolder;
-    background-image: url("/Code/Energy.png");
+    background-image: url("Energy.png");
     left: 3%;
     bottom: 5%;
     width: 150px;
@@ -175,7 +175,7 @@
 }
 
 .settings {
-    background-image: url("/Code/Settings.png");
+    background-image: url("Settings.png");
     position: absolute;
     width: 60px;
     height: 60px;
@@ -191,7 +191,7 @@
 .Reload {
     border: none;
     position: absolute;
-    background-image: url("/Code/DrawCards.png");
+    background-image: url("DrawCards.png");
     left: 15%;
     bottom: 25%;
     width: 200px;
@@ -225,7 +225,7 @@
 }
 
 .AnnoyingInstructor {
-    background-image: url("/Code/AnnoyingInstructor.png");
+    background-image: url("AnnoyingInstructor.png");
     width: 82px;
     height: 89px;
     border: rgba(255, 187, 216, 0);
