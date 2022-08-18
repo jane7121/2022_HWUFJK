@@ -1,0 +1,239 @@
+.EndTurn{
+    position: absolute;
+    left: 15%;
+    bottom: 15%;
+    width: 200px;
+    height: 60px;
+    border: none;
+    background-image: url("Endturn.png");
+}
+
+.Card1 {
+    background-image: url("Blank.png");
+    width: 203px;
+    height: 301px;
+    position: absolute;
+    left: 28%;
+    bottom: 0%;
+    border: rgba(255, 187, 216, 0);
+}
+
+.Card2 {
+    background-image: url("Blank.png");
+    width: 203px;
+    height: 301px;
+    position: absolute;
+    left: 39%;
+    bottom: 0%;
+    border: rgba(255, 187, 216, 0);
+}
+
+.Card3 {
+    background-image: url("Blank.png");
+    width: 203px;
+    height: 301px;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    border: rgba(255, 187, 216, 0);
+}
+
+.Card4 {
+    background-image: url("Blank.png");
+    width: 203px;
+    height: 301px;
+    position: absolute;
+    left: 61%;
+    bottom: 0%;
+    border: rgba(255, 187, 216, 0);
+}
+
+.Card5 {
+    background-image: url("Blank.png");
+    width: 203px;
+    height: 301px;
+    position: absolute;
+    left: 72%;
+    bottom: 0%;
+    border: rgba(255, 187, 216, 0);
+}
+
+.Player {
+    background-image: url("Player.png");
+    background-color: white;
+    border: rgba(255, 187, 216, 0);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    bottom: 55%;
+    left: 20%;
+}
+
+.Enemy {
+    background-image: url("Enemy.jpg");
+    border: rgba(255, 187, 216, 0);
+    width: 240px;
+    height: 250px;
+    position: absolute;
+    bottom: 55%;
+    left: 70%;
+}
+
+.Enemy2 {
+    border: rgba(255, 187, 216, 0);
+    width: 167px;
+    height: 176px;
+    position: absolute;
+    bottom: 55%;
+    left: 87%;
+}
+
+.PlayerHealth {
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20%;
+    background-color: crimson;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    bottom: 50%;
+    left: 19.5%;
+}
+
+
+.PlayerShield {
+    font-size: x-large;
+    font-weight: bolder;
+    line-height: 60px;
+    text-align: center;
+    background-image: url("Shield.png");
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    bottom: 48%;
+    left: 18%;
+}
+
+.EnemyShield {
+    font-size: x-large;
+    font-weight: bolder;
+    line-height: 60px;
+    text-align: center;
+    background-image: url("Shield.png");
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    bottom: 48%;
+    left: 68.5%;
+}
+
+.EnemyShield2 {
+    font-size: x-large;
+    font-weight: bolder;
+    line-height: 60px;
+    text-align: center;
+    background-image: url("Shield.png");
+    width: 69px;
+    height: 69px;
+    position: absolute;
+    bottom: 48%;
+    left: 85.5%;
+}
+
+.Message {
+    word-wrap: break-word;
+    position: absolute;
+    font-size: 15px;
+    left: 44%;
+    bottom: 40%;
+    width: 203px;
+    height: 301px;
+}
+
+.Message2 {
+    word-wrap: break-word;
+    position: absolute;
+    font-size: 15px;
+    left: 55%;
+    bottom: 40%;
+    width: 203px;
+    height: 301px;
+}
+
+.Energy {
+    position: absolute;
+    text-align: center;
+    line-height: 150px;
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: url("Energy.png");
+    left: 3%;
+    bottom: 5%;
+    width: 150px;
+    height: 150px;
+}
+
+.settings {
+    background-image: url("Settings.png");
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 94%;
+    right: 0%;
+    border: none;
+}
+
+.settings:active {
+    bottom: 93%;
+}
+
+.Reload {
+    border: none;
+    position: absolute;
+    background-image: url("DrawCards.png");
+    left: 15%;
+    bottom: 25%;
+    width: 200px;
+    height: 60px;
+}
+
+.EnemyHealth {
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20%;
+    background-color: crimson;
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    bottom: 50%;
+    left: 70%;
+}
+
+.EnemyHealth2 {
+    font-size: large;
+    font-weight: bolder;
+    text-align: center;
+    border-radius: 20%;
+    background-color: crimson;
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    bottom: 50%;
+    left: 87%;
+}
+
+.AnnoyingInstructor {
+    background-image: url("AnnoyingInstructor.png");
+    width: 82px;
+    height: 89px;
+    border: rgba(255, 187, 216, 0);
+    position: absolute;
+    bottom: 75%;
+    left: 18%;
+}
+
+.AnnoyingInstructor:active {
+    bottom: 73%;
+}
