@@ -226,6 +226,14 @@
     document.getElementById("EnemyShield").innerHTML = enemyShield
     document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
     break;
+    case 16:
+            enemyHp = 184
+            enemyMaxHp = 236
+            enemyShield = 25
+            document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyIce.jpg)"
+            document.getElementById("EnemyShield").innerHTML = enemyShield
+            document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
+        break;
 }
 }
     if (playerHealth < 1) {
@@ -979,6 +987,13 @@
     'Strike1',
     'Arrow'
     ]  // Water Deck
+    enemyDeck7 = [
+        'Blizzard',
+        'Blizzard',
+        'Defend3',
+        'Heal',
+        'Water Staff'
+    ] //Ice Deck
     enemyChosenDeck = enemyDeck1;
     switch (floor){
     case 2:
@@ -1012,6 +1027,9 @@
     enemyChosenDeck=['Defend2','Defend2','Arrow','Water Staff']
 }
     break;
+        case 16:
+            enemyChosenDeck = enemyDeck7
+            break;
 }
     enemyChosenDeck = enemyChosenDeck[Math.floor(Math.random() * enemyChosenDeck.length)];
     switch (enemyChosenDeck) {
@@ -1048,6 +1066,16 @@
     enemyShield = enemyShield + 15
     Update()
     break;
+    case 'Heal':
+    document.getElementById("Message").style.backgroundImage  = "url(Code/Heal.png)"
+    enemyHp = enemyHp + 12
+    Update()
+    break;
+    case 'Defend3':
+    document.getElementById("Message").style.backgroundImage  = "url(Code/DefendLv3.png)"
+    enemyShield = enemyShield + 20
+    Update()
+    break;
     case 'Defend2':
     document.getElementById("Message").style.backgroundImage  = "url(Code/DefendLv2.png)"
     enemyShield = enemyShield + 9
@@ -1058,6 +1086,19 @@
     enemyShield = enemyShield + 7
     Update()
     break;
+        case 'Blizzard':
+            document.getElementById("Message").style.backgroundImage  = "url(Code/Blizzard.png)"
+            if (playerShield - 26 < 0) {
+                playerHealth = playerHealth + (playerShield - 26)
+                playerShield = 0
+                enemyHp = enemyHp - 13
+                Update();
+            } else {
+                playerShield = playerShield - 26
+                enemyHp = enemyHp - 13
+                Update();
+            }
+            break;
     case 'Strike2':
     document.getElementById("Message").style.backgroundImage  = "url(Code/StrikeLv2.png)"
     if (playerShield - 12 < 0) {
@@ -1150,10 +1191,4 @@
     attackCounter = 0;
     EnemyTurn();
 }
-
-
-
-
-
-
 
