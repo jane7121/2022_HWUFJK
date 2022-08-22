@@ -12,16 +12,7 @@
 ## After downloading, to run the file, open CLICK_ME.
 ## 要运行文件，请打开 CLICK_ME。 
 
-### COMMAND CONSOLE (In game):
-
-restart:                             REBOOT()
-debug:                               DEBUGGER()
-set floor*:                          SETFLOORTO()
-set health**:                        SETHEALTHTO()
-
-
-*Inside the quotation marks for SETFLOORTO(), put the floor number you want to go to ex. SETFLOORTO(4). 
-**Inside the quotation marks for SETHEALTHTO(), put the health number you want to have ex. SETHEALTHTO(65). 
+###Js Html Css 
 
 ## WAYNE 2022-08-16
 
