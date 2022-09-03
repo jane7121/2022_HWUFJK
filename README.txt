@@ -10,7 +10,8 @@
 ## 快别读了，去下载吧！
 
 ## After downloading, to run the file, open CLICK_ME.
-## 要运行文件，请打开 CLICK_ME。 
+## 要运行文件，请打开 CLICK_ME。
+## Press X key to quit game.
 
 ###Js Html Css 
 
