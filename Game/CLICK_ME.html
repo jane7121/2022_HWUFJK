@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+v1.1 Card Game
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,7 +26,6 @@
 <button class="Enemy2" id="Enemy2"></button>
 <div class="EnemyHealth2" Id="EnemyHealth2"></div>
 <div class="EnemyShield2" Id="EnemyShield2"></div>
-
 
 <div class="Energy" Id="Energy">3/3</div>
 <div class="Message" Id="Message"></div>
@@ -54,7 +54,15 @@
 <button class="settings" onclick="Music()"></button>
 
 </body>
-
 <script src="Code/GameInternal.js"></script>
+<script src="Code/BackgroundFunction.js"></script>
 <link rel="stylesheet" href="Code/GameStyle.css">
+<div class="form-popup" id="myForm">
+    <form  class="form-container">
+        <p style="font-weight: bolder;">You may add a card to your deck!</p>
+        <button class="Opt1" onclick="select1()" type="button" id='OPT1'></button>
+        <button class="Opt2" onclick="select2()" type="button" id='OPT2'></button>
+    </form>
+</div>
+
 </html>
