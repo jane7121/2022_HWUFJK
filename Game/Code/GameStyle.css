@@ -6,6 +6,15 @@
     height: 60px;
     border: none;
     background-image: url("Endturn.png");
+    transition: 0.3s;
+}
+
+.EndTurn:hover {
+    bottom: 16%;
+}
+
+.EndTurn:active {
+    bottom: 14%;
 }
 
 .Card1 {
@@ -16,7 +25,25 @@
     left: 28%;
     bottom: 0%;
     border: rgba(255, 187, 216, 0);
+    transition: 0.3s;
 }
+
+.Card1:hover {
+    bottom: 2%;
+}
+.Card2:hover {
+    bottom: 2%;
+}
+.Card3:hover {
+    bottom: 2%;
+}
+.Card4:hover {
+    bottom: 2%;
+}
+.Card5:hover {
+    bottom: 2%;
+}
+
 
 .Card2 {
     background-image: url("Blank.png");
@@ -26,6 +53,7 @@
     left: 39%;
     bottom: 0%;
     border: rgba(255, 187, 216, 0);
+    transition: 0.3s;
 }
 
 .Card3 {
@@ -36,6 +64,7 @@
     left: 50%;
     bottom: 0%;
     border: rgba(255, 187, 216, 0);
+    transition: 0.3s;
 }
 
 .Card4 {
@@ -46,6 +75,7 @@
     left: 61%;
     bottom: 0%;
     border: rgba(255, 187, 216, 0);
+    transition: 0.3s;
 }
 
 .Card5 {
@@ -56,6 +86,7 @@
     left: 72%;
     bottom: 0%;
     border: rgba(255, 187, 216, 0);
+    transition: 0.3s;
 }
 
 .Player {
@@ -77,6 +108,7 @@
     position: absolute;
     bottom: 55%;
     left: 70%;
+    transition: 1s;
 }
 
 .Enemy2 {
@@ -149,6 +181,11 @@
     bottom: 40%;
     width: 203px;
     height: 301px;
+    transition: 0.5s;
+}
+
+.Message:hover {
+    bottom: 42%;
 }
 
 .Message2 {
@@ -159,7 +196,13 @@
     bottom: 40%;
     width: 203px;
     height: 301px;
+    transition: 0.5s;
 }
+
+.Message2:hover {
+    bottom: 42%;
+}
+
 
 .Energy {
     position: absolute;
@@ -172,6 +215,15 @@
     bottom: 5%;
     width: 150px;
     height: 150px;
+    animation-name: energy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes energy {
+    from {transform: scale(1);}
+    50% {transform: scale(0.9);}
+    to {transform: scale(1);}
 }
 
 .settings {
@@ -196,7 +248,18 @@
     bottom: 25%;
     width: 200px;
     height: 60px;
+    transition: 0.3s;
 }
+
+.Reload:hover {
+    bottom: 26%;
+}
+
+.Reload:active {
+    bottom: 24%;
+}
+
+
 
 .EnemyHealth {
     font-size: large;
@@ -232,8 +295,45 @@
     position: absolute;
     bottom: 75%;
     left: 18%;
+    transition: 0.3s;
 }
 
 .AnnoyingInstructor:active {
     bottom: 73%;
+}
+
+
+
+body {font-family: "Lucida Console", "Courier New", monospace;}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+}
+
+.form-container {
+    max-width: 800px;
+    padding: 10px;
+    background-color: ORANGE;
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.Opt1{
+    width: 203px;
+    height: 301px;
+    background-image: url("Backside.png");
+    transition: 0.4;
+}
+
+.Opt2{
+    width: 203px;
+    height: 301px;
+    background-image: url("Backside.png");
 }
