@@ -507,7 +507,7 @@ function Update() {
                 Occupied = true
                 hash = "/"
                 enemyShield2 = "26";
-                enemyHp2 = "400";
+                enemyHp2 = "212";
                 enemyMaxHp2 = 413;
                 document.getElementById("Enemy2").style.backgroundImage = "url('Code/DestroyerAssist.jpg')"
                 document.getElementById("EnemyShield2").innerHTML = enemyShield2
@@ -515,9 +515,9 @@ function Update() {
                 document.getElementById("EnemyShield2").style.backgroundImage = "url('Code/Shield.png')"
                 document.getElementById("EnemyHealth2").style.backgroundColor = "Crimson"
                 document.getElementById("EnemyHealth2").style.backgroundImage = "None"
-                enemyHp = 498
+                enemyHp = 398
                 enemyMaxHp = 524
-                enemyShield = 90
+                enemyShield = 70
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardian.jpg)"
                 document.getElementById("EnemyShield").innerHTML = enemyShield
                 document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
@@ -534,7 +534,7 @@ function Update() {
     document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
     document.getElementById("Energy").innerHTML = energy + '/' + '3'
     //update
-}  //final boss need finishing
+}
 
 function Use1() {
 
@@ -2358,12 +2358,18 @@ function EnemyTurn() {
             case 20:
                 switch (Math.round(Math.random() * 2)) {
                     case 0:
-                        document.getElementById('Message2').style.backgroundImage = "url('Code/Protect.png')"
-                        enemyShield = enemyShield + 10
-                        Update()
+                        document.getElementById('Message2').style.backgroundImage = "url('Code/Sword.png')"
+                        if (playerShield - 4 < 0) {
+                            playerHealth = playerHealth + (playerShield - 4)
+                            playerShield = 0
+                            Update()
+                        } else {
+                            playerShield = playerShield - 4
+                            Update()
+                        }
                         break;
                     case 1:
-                        document.getElementById('Message2').style.backgroundImage = "url('Code/Protect.png')"
+                        document.getElementById('Message2').style.backgroundImage = "url('Code/Strike.png')"
                         if (playerShield - 10 < 0) {
                             playerHealth = playerHealth + (playerShield - 10)
                             playerShield = 0
@@ -2438,9 +2444,9 @@ function EnemyTurn() {
         'Defend3',
         'Heal',
         'Water Staff'
-    ] //Ice Deck
+    ]  // Ice Deck
     enemyDeck8 = ['Strike3',
-        'Strike3','Strike3','Water Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3']
+        'Strike3','Strike3','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Arrow']  // Guardian Deck
     enemyChosenDeck = enemyDeck1;
     switch (floor) {
         case 2:
@@ -2467,11 +2473,11 @@ function EnemyTurn() {
             enemyChosenDeck = enemyDeck6
             if (enemyHp < 120) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyWaterAnger.jpg)"
-                enemyChosenDeck = ['Defend2', 'Defend2', 'Strike2', 'Strike2', 'Arrow', 'Arrow', 'Water Staff']
+                enemyChosenDeck = ['Defend2', 'Strike2', 'Strike2', 'Arrow', 'Arrow',]
             }
-            if (enemyHp < 60) {
+            if (enemyHp < 50) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyWaterAngerAnger.jpg)"
-                enemyChosenDeck = ['Defend2', 'Defend2', 'Arrow', 'Water Staff']
+                enemyChosenDeck = ['Arrow','Arrow','Arrow','Arrow','Arrow','Water Staff']
             }
             break;
         case 16:
@@ -2481,15 +2487,15 @@ function EnemyTurn() {
             enemyChosenDeck = enemyDeck8
             if (enemyHp < 220) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAnger.jpg)"
-                enemyChosenDeck = ['Strike3', 'Strike3','Water Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Defend3']
+                enemyChosenDeck = ['Strike3', 'Strike3','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Defend3']
             }
             if (enemyHp < 120) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAngerAnger.jpg)"
-                enemyChosenDeck = ['Water Staff','Earth Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Defend3']
+                enemyChosenDeck = ['Earth Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3']
             }
             if (enemyHp < 60) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAngerAngerAnger.jpg)"
-                enemyChosenDeck = ['Heal','Heal','Defend3','Defend3','Earth Staff','Earth Staff','Fire Staff','Fire Staff',]
+                enemyChosenDeck = ['Heal','Defend3','Defend3','Earth Staff','Earth Staff','Fire Staff',]
             }
             break;
     }
@@ -2635,7 +2641,7 @@ function EnemyTurn() {
             Update()
             break;
     }
-} //final boss deck req. //final boss case code req.
+}
 
 function EndTurn() {
     document.getElementById("Reload").disabled = false;
