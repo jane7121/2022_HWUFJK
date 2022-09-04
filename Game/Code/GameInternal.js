@@ -39,7 +39,7 @@ var addDeck1 = [];
 var finalDeck;
 var finalDeck1;
 var playerShield = 0;
-var playerHealth = 95;
+var playerHealth = 83;
 var difficulty = 0;
 var floor = 1
 //ENEMY VARIBLES
@@ -77,6 +77,7 @@ var enemyChosenDeck;
 //UPDATE
 document.getElementById("EnemyShield2").style.backgroundImage = "url('Code/Blank.png')"
 document.getElementById("EnemyHealth2").style.backgroundImage = "url('Code/Blank.png')"
+document.getElementById('PlayerHealth').innerHTML = playerHealth + '/295'
 document.getElementById("Enemy2").style.backgroundImage = "url('Code/Blank.png')"
 document.getElementById("EnemyShield2").innerHTML = enemyShield2
 document.getElementById("EnemyHealth2").innerHTML = enemyHp2 + hash + enemyMaxHp2
@@ -531,7 +532,7 @@ function Update() {
     document.getElementById("EnemyShield").innerHTML = enemyShield
     document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
     document.getElementById("PlayerShield").innerHTML = playerShield
-    document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+    document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
     document.getElementById("Energy").innerHTML = energy + '/' + '3'
     //update
 }
@@ -704,13 +705,13 @@ function Use1() {
                 powerCardsPlayed = powerCardsPlayed + 1
                 energy = energy - 3
                 document.getElementById('Slot2').style.backgroundImage = "url(Code/Sword.png)";
-                card2 = 001;
+                card2 = 100;
                 document.getElementById('Slot3').style.backgroundImage = "url(Code/Sword.png)";
-                card3 = 001;
+                card3 = 100;
                 document.getElementById('Slot4').style.backgroundImage = "url(Code/Sword.png)";
-                card4 = 001;
+                card4 = 100;
                 document.getElementById('Slot5').style.backgroundImage = "url(Code/Sword.png)";
-                card5 = 001;
+                card5 = 100;
                 Update();
             } else {
             }
@@ -750,7 +751,7 @@ function Use1() {
                     Update();
                 }
                 playerHealth = playerHealth - 13
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -762,7 +763,7 @@ function Use1() {
                 document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 12
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1038,7 +1039,7 @@ function Use2() {
                     Update();
                 }
                 playerHealth = playerHealth - 13
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1052,7 +1053,7 @@ function Use2() {
                 document.getElementById("Slot2").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 12
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1332,7 +1333,7 @@ function Use3() {
                     Update();
                 }
                 playerHealth = playerHealth - 13
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1346,7 +1347,7 @@ function Use3() {
                 document.getElementById("Slot3").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 12
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1627,7 +1628,7 @@ function Use4() {
                     Update();
                 }
                 playerHealth = playerHealth - 13
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1641,7 +1642,7 @@ function Use4() {
                 document.getElementById("Slot4").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 12
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1921,7 +1922,7 @@ function Use5() {
                     Update();
                 }
                 playerHealth = playerHealth - 13
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
@@ -1935,7 +1936,7 @@ function Use5() {
                 document.getElementById("Slot5").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 12
-                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/95'
+                document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
             break;
