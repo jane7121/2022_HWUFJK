@@ -1059,7 +1059,7 @@ function Use2() {
             break;
         case
         14
-        :
+        : 
             if (energy > 0) {
                 playCard.pause();
                 playCard.play();
