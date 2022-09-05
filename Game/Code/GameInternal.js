@@ -765,6 +765,7 @@ function Use1() {
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
+                Update();
             } else {
             }
             break;
@@ -1049,11 +1050,12 @@ function Use2() {
                 playCard.pause();
                 playCard.play();
                 energy = energy - 3
-                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot1").disabled = true;
+                document.getElementById('Slot2').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot2").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
+                Update();
             } else {
             }
             break;
@@ -1342,11 +1344,12 @@ function Use3() {
                 playCard.pause();
                 playCard.play();
                 energy = energy - 3
-                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot1").disabled = true;
+                document.getElementById('Slot3').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot3").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
+                Update();
             } else {
             }
             break;
@@ -1636,11 +1639,12 @@ function Use4() {
                 playCard.pause();
                 playCard.play();
                 energy = energy - 3
-                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot1").disabled = true;
+                document.getElementById('Slot4').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot4").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
+                Update();
             } else {
             }
             break;
@@ -1929,11 +1933,12 @@ function Use5() {
                 playCard.pause();
                 playCard.play();
                 energy = energy - 3
-                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot1").disabled = true;
+                document.getElementById('Slot5').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot5").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
                 playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
+                Update();
             } else {
             }
             break;
