@@ -756,13 +756,14 @@ function Use1() {
             }
             break;
         case 13:
-            if (energy > 0) {
+            if (energy > 2) {
                 playCard.pause();
                 playCard.play();
+                energy = energy - 3
                 document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 12
+                playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
@@ -1043,16 +1044,15 @@ function Use2() {
             } else {
             }
             break;
-        case
-        13
-        :
-            if (energy > 0) {
+        case 13:
+            if (energy > 2) {
                 playCard.pause();
                 playCard.play();
-                document.getElementById('Slot2').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot2").disabled = true;
+                energy = energy - 3
+                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 12
+                playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
@@ -1337,16 +1337,15 @@ function Use3() {
             } else {
             }
             break;
-        case
-        13
-        :
-            if (energy > 0) {
+        case 13:
+            if (energy > 2) {
                 playCard.pause();
                 playCard.play();
-                document.getElementById('Slot3').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot3").disabled = true;
+                energy = energy - 3
+                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 12
+                playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
@@ -1632,16 +1631,15 @@ function Use4() {
             } else {
             }
             break;
-        case
-        13
-        :
-            if (energy > 0) {
+        case 13:
+            if (energy > 2) {
                 playCard.pause();
                 playCard.play();
-                document.getElementById('Slot4').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot4").disabled = true;
+                energy = energy - 3
+                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 12
+                playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
@@ -1926,16 +1924,15 @@ function Use5() {
             } else {
             }
             break;
-        case
-        13
-        :
-            if (energy > 0) {
+       case 13:
+            if (energy > 2) {
                 playCard.pause();
                 playCard.play();
-                document.getElementById('Slot5').style.backgroundImage = "url(Code/Blank.png)";
-                document.getElementById("Slot5").disabled = true;
+                energy = energy - 3
+                document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
+                document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 12
+                playerHealth = playerHealth + 5
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
             } else {
             }
