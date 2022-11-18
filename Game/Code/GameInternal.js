@@ -26,7 +26,7 @@ var fire = document.getElementById("Fire")
 var talk1 = document.getElementById("Talk1")
 var talk2 = document.getElementById("Talk2")
 var talk3 = document.getElementById("Talk3")
-
+console.log("never gonna give you up never gonna let you down...")
 //PLAYER VARIBLES
 var card1;
 var card2;
