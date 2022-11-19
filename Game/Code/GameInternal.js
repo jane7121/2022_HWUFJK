@@ -26,7 +26,10 @@ var fire = document.getElementById("Fire")
 var talk1 = document.getElementById("Talk1")
 var talk2 = document.getElementById("Talk2")
 var talk3 = document.getElementById("Talk3")
-console.log("never gonna give you up never gonna let you down...")
+console.log("Hmmm...You sus")
+console.log("If ur gonna hack my game, then there's gonna be a cost...")
+console.log("And now you know whats coming next")
+console.log("NEVER GONNA GIVE YOU UP, NEVER GONNA LET YOU DOWN, NEVER GONNA RUN AROUND AND DESERT YOU,")
 //PLAYER VARIBLES
 var card1;
 var card2;
