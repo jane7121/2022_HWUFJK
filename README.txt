@@ -12,8 +12,10 @@
 ## After downloading, to run the file, open CLICK_ME.
 ## 要运行文件，请打开 CLICK_ME。
 ## Press X key to quit game.
+## If the cards are crammed together then you can zoom out using ctrl and the mouse scroll bar
 
-###Js Html Css 
+###Js Html Css (And maybe some other background code thats running)
+
 
 ## WAYNE 2022-08-16
 
