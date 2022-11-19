@@ -13,7 +13,7 @@
 ## 要运行文件，请打开 CLICK_ME。
 ## Press X key to quit game.
 ## If the cards are crammed together then you can zoom out using ctrl and the mouse scroll bar
-
+## If you didn't quite get what I said, this is a video from Warren on how to do it: https://www.youtube.com/shorts/MKejDUTV2-Q 
 ###Js Html Css (And maybe some other background code thats running)
 
 
