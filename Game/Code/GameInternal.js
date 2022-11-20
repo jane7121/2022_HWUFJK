@@ -1,3 +1,6 @@
+alert("Made by King404 2022-11-20")
+
+
 //ORDER_CODE
 // 0strike.
 // 1defend.
@@ -26,10 +29,7 @@ var fire = document.getElementById("Fire")
 var talk1 = document.getElementById("Talk1")
 var talk2 = document.getElementById("Talk2")
 var talk3 = document.getElementById("Talk3")
-console.log("Hmmm...You sus")
-console.log("If ur gonna hack my game, then there's gonna be a cost...")
-console.log("And now you know whats coming next")
-console.log("NEVER GONNA GIVE YOU UP, NEVER GONNA LET YOU DOWN, NEVER GONNA RUN AROUND AND DESERT YOU,")
+
 //PLAYER VARIBLES
 var card1;
 var card2;
@@ -500,9 +500,9 @@ function Update() {
                 document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
                 break;
             case 16:
-                enemyHp = 184
-                enemyMaxHp = 236
-                enemyShield = 25
+                enemyHp = 384
+                enemyMaxHp = 386
+                enemyShield = 55
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyIce.jpg)"
                 document.getElementById("EnemyShield").innerHTML = enemyShield
                 document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
@@ -519,9 +519,9 @@ function Update() {
                 document.getElementById("EnemyShield2").style.backgroundImage = "url('Code/Shield.png')"
                 document.getElementById("EnemyHealth2").style.backgroundColor = "Crimson"
                 document.getElementById("EnemyHealth2").style.backgroundImage = "None"
-                enemyHp = 398
+                enemyHp = 348
                 enemyMaxHp = 524
-                enemyShield = 70
+                enemyShield = 66
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardian.jpg)"
                 document.getElementById("EnemyShield").innerHTML = enemyShield
                 document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
@@ -759,16 +759,14 @@ function Use1() {
             }
             break;
         case 13:
-            if (energy > 2) {
+            if (energy > 0) {
                 playCard.pause();
                 playCard.play();
-                energy = energy - 3
                 document.getElementById('Slot1').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot1").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 5
+                playerHealth = playerHealth + 12
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
-                Update();
             } else {
             }
             break;
@@ -1048,23 +1046,23 @@ function Use2() {
             } else {
             }
             break;
-        case 13:
-            if (energy > 2) {
+        case
+        13
+        :
+            if (energy > 0) {
                 playCard.pause();
                 playCard.play();
-                energy = energy - 3
                 document.getElementById('Slot2').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot2").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 5
+                playerHealth = playerHealth + 12
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
-                Update();
             } else {
             }
             break;
         case
         14
-        : 
+        :
             if (energy > 0) {
                 playCard.pause();
                 playCard.play();
@@ -1342,17 +1340,17 @@ function Use3() {
             } else {
             }
             break;
-        case 13:
-            if (energy > 2) {
+        case
+        13
+        :
+            if (energy > 0) {
                 playCard.pause();
                 playCard.play();
-                energy = energy - 3
                 document.getElementById('Slot3').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot3").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 5
+                playerHealth = playerHealth + 12
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
-                Update();
             } else {
             }
             break;
@@ -1637,17 +1635,17 @@ function Use4() {
             } else {
             }
             break;
-        case 13:
-            if (energy > 2) {
+        case
+        13
+        :
+            if (energy > 0) {
                 playCard.pause();
                 playCard.play();
-                energy = energy - 3
                 document.getElementById('Slot4').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot4").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 5
+                playerHealth = playerHealth + 12
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
-                Update();
             } else {
             }
             break;
@@ -1931,17 +1929,17 @@ function Use5() {
             } else {
             }
             break;
-       case 13:
-            if (energy > 2) {
+        case
+        13
+        :
+            if (energy > 0) {
                 playCard.pause();
                 playCard.play();
-                energy = energy - 3
                 document.getElementById('Slot5').style.backgroundImage = "url(Code/Blank.png)";
                 document.getElementById("Slot5").disabled = true;
                 skillCardsPlayed = skillCardsPlayed + 1
-                playerHealth = playerHealth + 5
+                playerHealth = playerHealth + 12
                 document.getElementById("PlayerHealth").innerHTML = playerHealth + '/295'
-                Update();
             } else {
             }
             break;
@@ -2427,7 +2425,8 @@ function EnemyTurn() {
         'Defend',
         'Strike1',
         'Defend1',
-        'Earth Staff'
+        'Earth Staff',
+        'Cactus Bomb'
     ]  // Earth Deck
     enemyDeck5 = [
         'Strike1',
@@ -2446,10 +2445,10 @@ function EnemyTurn() {
     ]  // Water Deck
     enemyDeck7 = [
         'Blizzard',
-        'Blizzard',
         'Defend3',
         'Heal',
-        'Water Staff'
+        'Water Staff',
+        'Mighty Punch'
     ]  // Ice Deck
     enemyDeck8 = ['Strike3',
         'Strike3','Strike3','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Arrow']  // Guardian Deck
@@ -2465,14 +2464,14 @@ function EnemyTurn() {
             enemyChosenDeck = enemyDeck4
             if (enemyHp < 90) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyEarthAnger.jpg)"
-                enemyChosenDeck = ['Earth Staff', 'Earth Staff', 'Earth Staff', 'Strike1', 'Defend1']
+                enemyChosenDeck = ['Earth Staff', 'Earth Staff', 'Earth Staff', 'Strike1', 'Defend1','Cactus Bomb','Cactus Bomb','Cactus Bomb']
             }
             break;
         case 8:
             enemyChosenDeck = enemyDeck5
             if (enemyShield < 5) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyFireAnger.jpg)"
-                enemyChosenDeck = ['Fire Staff', 'Fire Staff', 'Arrow', 'Defend2']
+                enemyChosenDeck = ['Fire Staff', 'Fire Staff', 'Arrow', 'Defend2','DieDieDie']
             }
             break;
         case 12:
@@ -2491,22 +2490,52 @@ function EnemyTurn() {
             break;
         case 20:
             enemyChosenDeck = enemyDeck8
-            if (enemyHp < 220) {
+            if (enemyHp < 240) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAnger.jpg)"
-                enemyChosenDeck = ['Strike3', 'Strike3','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Defend3']
+                enemyChosenDeck = ['Strike3', 'Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Defend3']
             }
             if (enemyHp < 120) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAngerAnger.jpg)"
-                enemyChosenDeck = ['Earth Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3']
+                enemyChosenDeck = ['Earth Staff','Earth Staff','Fire Staff','Defend3','Defend3','Defend3','Fire Staff']
             }
             if (enemyHp < 60) {
                 document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardianAngerAngerAnger.jpg)"
-                enemyChosenDeck = ['Heal','Defend3','Defend3','Earth Staff','Earth Staff','Fire Staff',]
+                enemyChosenDeck = ['Heal','Defend3','Defend3','Earth Staff','Earth Staff','Fire Staff','DieDieDie']
             }
             break;
     }
     enemyChosenDeck = enemyChosenDeck[Math.floor(Math.random() * enemyChosenDeck.length)];
     switch (enemyChosenDeck) {
+        case 'DieDieDie':
+            document.getElementById("Message").style.backgroundImage = "url(Code/DieDieDie.png)"
+            if (playerShield - 36 < 0) {
+                playerHealth = playerHealth + (playerShield - 36)
+                playerShield = 0
+            } else {
+                playerShield = playerShield - 36
+            }
+            Update()
+            break;
+        case 'Cactus Bomb':
+            document.getElementById("Message").style.backgroundImage = "url(Code/CactusBomb.png)"
+            if (playerShield - 20 < 0) {
+                playerHealth = playerHealth + (playerShield - 20)
+                playerShield = 0
+            } else {
+                playerShield = playerShield - 20
+            }
+            Update()
+            break;
+        case 'Mighty Punch':
+            document.getElementById("Message").style.backgroundImage = "url(Code/MightyPunch.png)"
+            if (playerShield - 50 < 0) {
+                playerHealth = playerHealth + (playerShield - 50)
+                playerShield = 0
+            } else {
+                playerShield = playerShield - 50
+            }
+            Update()
+            break;
         case 'Water Staff':
             document.getElementById("Message").style.backgroundImage = "url(Code/WaterStaff.png)"
             if (playerShield - 13 < 0) {
