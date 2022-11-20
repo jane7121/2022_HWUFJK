@@ -107,7 +107,8 @@ function Yammering() {
             } else {
                 talk1.play()
                 alert('Ok...this enemy can get pretty powerful if you let it have over than 20 turns. Put your arrows and strikes to good use.')
-                alert("And don't ask me again!")
+                alert('Oh yeah and the turtle has got some other tricks up his uh..sleeve？ Hm do turtles have sleeves? zzz...')
+                alert("ZZZZZZZ....And don't ask me again!")
             }
             break;
         case 8:
@@ -133,8 +134,18 @@ function Yammering() {
             if (ask3 === '') {
             } else {
                 talk1.play()
+                alert('Oh yeah this one used to be farts but now it isnt and ur gonna get reky probably')
                 alert('This enemy will damage itself. Just block and you should be fine. SHOULD.')
-                alert('Yeah that probably will NOT work, try and attack too.')
+                alert('Yeah that probably will NOT work, try and attack too with strikes and stuff.')
+            }
+            break;
+            case 20:
+            var ask4 = prompt('Snore...')
+            if (ask3 === '') {
+            } else {
+                talk2.play()
+                alert('Its fat, its ugly, itll mash you into pieces if ur not careful.')
+                alert('Unless you got heal, ur pretty doomed, so uh, yeah.')
             }
             break;
     }
