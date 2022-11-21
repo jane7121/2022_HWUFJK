@@ -1,3 +1,8 @@
+var KEY = prompt()
+
+
+
+
 alert("Made by King404 2022-11-20")
 
 
