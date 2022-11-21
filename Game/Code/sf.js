@@ -1931,7 +1931,7 @@ function Reload() {
     document.getElementById('Slot3').disabled = false;
     document.getElementById('Slot4').disabled = false;
     document.getElementById('Slot5').disabled = false;
-    playerDeck1 = ['Arrow', 'Thinking Ahead','Target Practice','Heal','Heal','Defend2','Strike2']
+    playerDeck1 = ['Arrow', 'Thinking Ahead','Target Practice','Defend2']
     finalDeck1 = playerDeck1.concat(addDeck1);
     finalDeck = finalDeck1[Math.floor(Math.random() * finalDeck1.length)];
     switch (finalDeck) {
