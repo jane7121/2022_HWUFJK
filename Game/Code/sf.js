@@ -2627,6 +2627,7 @@ if(IILP === 'IILP46429358H3V92LVDJSKQBFU382OCJ'){
 
 }else{
     alert('Haha No.')
+    Window.close()
 }
 
 
