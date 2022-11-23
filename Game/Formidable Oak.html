@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+v1.1 Card Game
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Card Shuffle Beta</title>
+</head>
+<body>
+
+<button class="Card1" onclick="Use1()" Id="Slot1"></button>
+<button class="Card2" onclick="Use2()" Id="Slot2"></button>
+<button class="Card3" onclick="Use3()" Id="Slot3"></button>
+<button class="Card4" onclick="Use4()" Id="Slot4"></button>
+<button class="Card5" onclick="Use5()" Id="Slot5"></button>
+<button class="Player"></button>
+<button class="AnnoyingInstructor" onclick="Yammering()" Id="Fairy"></button>
+<div class="PlayerHealth" Id="PlayerHealth">95/95</div>
+<button class="Reload" onclick="Reload()" Id="Reload"></button>
+<button onclick="EndTurn()" class="EndTurn"></button>
+<div class="PlayerShield" Id="PlayerShield">0</div>
+
+<button class="Enemy" id="Enemy"></button>
+<div class="EnemyHealth" Id="EnemyHealth">24/24</div>
+<div class="EnemyShield" Id="EnemyShield">0</div>
+
+<button class="Enemy2" id="Enemy2"></button>
+<div class="EnemyHealth2" Id="EnemyHealth2"></div>
+<div class="EnemyShield2" Id="EnemyShield2"></div>
+
+<div class="Energy" Id="Energy">3/3</div>
+<div class="Message" Id="Message"></div>
+<div class="Message2" Id="Message2"></div>
+<audio id="PlayCard">
+    <source src="Code/Card.mp3">
+</audio>
+<audio id="BackgroundMusic">
+    <source src="Code/Part1.mp3">
+</audio>
+<audio id="Victory">
+    <source src="Code/Victory.m4a">
+</audio>
+<audio id="Fire">
+    <source src="Code/Fire.mp3">
+</audio>
+<audio id="Talk1">
+    <source src="Code/Talk1.m4a">
+</audio>
+<audio id="Talk2">
+    <source src="Code/Talk2.m4a">
+</audio>
+<audio id="Talk3">
+    <source src="Code/Talk3.m4a">
+</audio>
+<button class="settings" onclick="Music()"></button>
+
+</body>
+<script src="Code/Asus.js"></script>
+<link rel="stylesheet" href="Code/GameStyle.css">
+<div class="form-popup" id="myForm">
+    <form  class="form-container">
+        <p style="font-weight: bolder;">You may add a card to your deck!</p>
+        <button class="Opt1" onclick="select1()" type="button" id='OPT1'></button>
+        <button class="Opt2" onclick="select2()" type="button" id='OPT2'></button>
+    </form>
+</div>
+
+</html>
