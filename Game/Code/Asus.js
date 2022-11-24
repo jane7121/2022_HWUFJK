@@ -434,13 +434,13 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
                         document.getElementById("EnemyShield2").style.backgroundImage = "url('Code/Shield.png')"
                         document.getElementById("EnemyHealth2").style.backgroundColor = "Crimson"
                         document.getElementById("EnemyHealth2").style.backgroundImage = "None"
-                        enemyHp = 316
-                        enemyMaxHp = 317
-                        enemyShield = 32
+                        enemyHp = 116
+                        enemyMaxHp = 117
+                        enemyShield = 3
                         document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemyGuardian.jpg)"
                         document.getElementById("EnemyShield").innerHTML = enemyShield
                         document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
-                        alert('hahah. You call me fat?')
+                        alert('Hahah. You call me fat?')
                         alert('Well, I am. ')
                         alert('BUT...')
                         alert('I WILL SMASH!')
@@ -453,8 +453,8 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
                         enemyHp2 = "10";
                         enemyMaxHp2 = enemyHp2;
                         enemyHp = 1
-                        enemyMaxHp = 848
-                        enemyShield = 999
+                        enemyMaxHp = 1
+                        enemyShield = 666
                         document.getElementById("Enemy2").style.backgroundImage = "url('Code/EnemyFireAssist.jpg')"
                         document.getElementById("EnemyShield2").innerHTML = enemyShield2
                         document.getElementById("EnemyHealth2").innerHTML = enemyHp2 + hash + enemyMaxHp2
@@ -484,9 +484,9 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
                         document.getElementById("EnemyShield2").style.backgroundImage = "url('Code/Shield.png')"
                         document.getElementById("EnemyHealth2").style.backgroundColor = "Crimson"
                         document.getElementById("EnemyHealth2").style.backgroundImage = "None"
-                        enemyHp = 444
+                        enemyHp = 264
                         enemyMaxHp = 563
-                        enemyShield = 50
+                        enemyShield = 21
                         document.getElementById("Enemy").style.backgroundImage = "url(Code/EnemySheriff.jpg)"
                         document.getElementById("EnemyShield").innerHTML = enemyShield
                         document.getElementById("EnemyHealth").innerHTML = enemyHp + '/' + enemyMaxHp
@@ -2418,12 +2418,12 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
                 'Fire Staff'
             ]  // Fire Deck
             enemyDeck6 = [
-                'Strike3',
+                'Strike2',
                 'Defend3',
                 'Defend3',
                 'Water Staff',
                 'Water Staff',
-                'Mighty punch',
+                'Mighty Punch',
                 'Mighty Punch',
             ]  // Water Deck
             enemyDeck7 = [
