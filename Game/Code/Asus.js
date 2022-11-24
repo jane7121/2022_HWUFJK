@@ -2419,11 +2419,10 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
             ]  // Fire Deck
             enemyDeck6 = [
                 'Strike2',
-                'Defend3',
-                'Defend3',
+                'Strike2',
+                'Strike2',
+                'Strike',
                 'Water Staff',
-                'Water Staff',
-                'Mighty Punch',
                 'Mighty Punch',
             ]  // Water Deck
             enemyDeck7 = [
