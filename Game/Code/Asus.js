@@ -1,6 +1,4 @@
-var HFOS = prompt('ENTER KEY.')
 
-if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
 
 
 
@@ -2703,8 +2701,3 @@ if(HFOS === 'T0TH34RFI38RY3OJUS289R3D8'){
 
 
 
-
-
-
-
-}else{alert('Haha no.')}
